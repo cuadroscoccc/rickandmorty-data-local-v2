@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Personajes</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+            <img src="/src/images/logo-logo.png">
+            </a>
+            <h4 class="logo"> <a href="index.html">Rick and Morty</a></h4>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="personajes.html">Personajes</a></li>
+                <li><a class="nav-link" href="temporadas.html">Temporadas</a></li>
+                <li><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">  
+         <section class="container">
+        <div class="introduction">
+            <div class="intro-text">
+                <h1>Rick and Morty</h1>
+                <p>Encuentra tus personajes favoritos sea por nombre o especie  
+                     además conoce los episodios donde ha tenido aparición</p>
+            </div>
+            <div class="other">
+                <section>
+                    <input id="search" class="other-btnOne buscar" placeholder="Buscar">
+                    <select name="option" id="op" class=" other-btnTwo selected opcion">
+                     <option value="0" selected >Seleccione</option>
+                     <option value="Human">Human</option>
+                     <option value="Alien">Alien</option>
+                     <option value="Humanoid">Humanoid</option>
+                     <option value="Poopybutthole">Poopybutthole</option>
+                     <option value="Mytholog">Mytholog</option>
+                     <option value="Animal">Animal</option>
+                     <option value="Vampire">Vampire</option>
+                     <option value="Robot">Robot</option>
+                     <option value="Cronenberg">Cronenberg</option>
+                     <option value="Parasite">Parasite</option>
+                     <option value="Disease">Disease</option>
+                     <option value="unknown">Unknown</option>
+                    </select>
+                  </section>
+            </div>
+        </div>   
+    
+    </section>
+</section>
+    <main>
+     
+
+        <section id="cards" class="cards"></section>
+        <section id="cardsSearch" class="cardsSearch"></section>
+        <section id="modal" class="modal active">
+            <div id="close_modal" class="close off">X</div>
+            <div class="card__body">
+                <figure class="card_figure"></figure>
+              <h2 class="card_title"></h2>
+              <h2 class="card-description specie"></h2>
+              <h2 class="card-description status"></h2>
+              <h2 class="card-description gender"></h2>
+              <h2 class="card-description origen"></h2>
+              <h2 class="card-description location"></h2>
+              <div class="button_modal off">
+                <button id="btnEpisodio">EPISODIOS</button>
+              </div>
+            </div>
+        
+        </section>
+        <section id="ver" class="item_ver"></section>
+        
+
+    </main>
+
+   <script src="js/personaje.js" type="module"></script> 
+</body>
+</html>
