@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Curiosidades</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+            <img src="/src/images/logo-logo.png">
+            </a>
+            <h4 class="logo"> <a href="index.html">Rick and Morty</a></h4>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="personajes.html">Personajes</a></li>
+                <li><a class="nav-link" href="temporadas.html">Temporadas</a></li>
+                <li><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <section class="container">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>Rick and Morty</h1>
+                    <p>Encuentra tus personajes favoritos</p>
+                    <p>sea por género o estado </p>
+                </div>
+                <div class="other">
+                    <select id="op_gender" class="other-btnTwo selected opcion" autofocus>
+                        <option value="0">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+                    <select id="op_status" class="other-btnTwo selected opcion">
+                        <option value="0">Status</option>
+                        <option value="Alive">Alive</option>
+                        <option value="Dead">Dead</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+                   
+                </div>
+            </div>
+        </section>
+    </section>
+    <main>
+       
+        <section id="template-gender" ></section>
+        <section id="template-status"></section>
+
+    </main>
+    <script src="js/curiosidades.js" type="module"></script>
+</body>
+</html>
